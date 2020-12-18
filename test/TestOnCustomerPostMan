@@ -1,0 +1,60 @@
+GET :
+----------------------------------------------------------------------------
+URL = http://localhost:3001/customer
+Go to : GET => Send
+
+USE TOKEN : metre le token pour etre en session dans le Bearer Token
+
+
+CREATE :
+----------------------------------------------------------------------------
+URL = http://localhost:3001/customer
+Go to : POST => Body => raw => JSON => remplire Body avec Test n° => Send
+
+Teste 1
+{
+    "email": "user4@mail.com",
+    "password": "user4Password",
+    "username": "Max",
+    "phonenumber": "0478506825",
+    "birthdate": "05 Dec 1995",
+    "gender": "H"
+}
+
+
+UPDATE :
+----------------------------------------------------------------------------
+URL = http://localhost:3001/customer
+Go to : PATCH => Body => raw => JSON => remplire Body avec Test n° => Send
+
+USE TOKEN : metre le token pour etre en session dans le Bearer Token
+
+Teste
+{
+    "email": "userPath@mail.com",
+    "password": "userPathPassword",
+    "username": "Maxime",
+    "phonenumber": "0478625894"
+}
+
+On peut test le login avec aprés :
+URL = http://localhost:3001/user
+Go to : GET => Body => raw => JSON => remplire Body avec Test n° => Send
+
+Test
+{
+    "email": "userPath@mail.com",
+    "password": "userPathPassword"
+}
+
+It's WORK well, nice
+
+
+DELET :
+----------------------------------------------------------------------------
+URL = http://localhost:3001/customer
+Go to : DELETE => Send
+
+USE TOKEN : metre le token pour etre en session dans le Bearer Token
+
+It's WORK well, nice

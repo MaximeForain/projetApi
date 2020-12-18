@@ -1,0 +1,29 @@
+{
+  "name": "projet_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "initDB": "node scripts/JS/initDB.js",
+    "dev": "nodemon app.js",
+    "genDoc": "node ./swagger/swagger_jsdoc.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-promise-router": "^4.0.1",
+    "pg": "^8.5.1",
+    "process": "^0.11.10",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.6",
+    "swagger-jsdoc": "^6.0.0-rc.4"
+  }
+}

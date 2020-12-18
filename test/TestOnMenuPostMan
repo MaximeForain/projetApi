@@ -1,0 +1,61 @@
+GET :
+----------------------------------------------------------------------------
+URL = http://localhost:3001/menu
+Go to : GET => Send
+
+USE TOKEN : metre le token pour etre en session dans le Bearer Token
+
+{
+    "bar_id" : 1
+}
+
+
+Result => liste des menu associer au bar
+
+
+CREATE :
+----------------------------------------------------------------------------
+URL = http://localhost:3001/menu
+Go to : POST => Body => raw => JSON => remplire Body avec Test n° => Send
+
+Teste 1
+{
+    "menuname": "nouveauMenu",
+    "isondisplay": "1",
+    "happyhourstarttime": "18:00:00",
+    "happyhourendtime": "19:00:00",
+    "bar_id": "1"
+}
+
+
+UPDATE :
+----------------------------------------------------------------------------
+URL = http://localhost:3001/menu
+Go to : PATCH => Body => raw => JSON => remplire Body avec Test n° => Send
+
+USE TOKEN : metre le token pour etre en session dans le Bearer Token
+
+Teste 1
+{
+    "menu_id": "1",
+    "menuname": "PathMenu",
+    "isondisplay": "1",
+    "happyhourstarttime": "18:00:00",
+    "happyhourendtime": "19:00:00",
+    "bar_id": "1"
+}
+
+
+DELET :
+----------------------------------------------------------------------------
+URL = http://localhost:3001/menu
+Go to : DELETE => Body => raw => JSON => remplire Body avec Test n° => Send
+
+USE TOKEN : metre le token pour etre en session dans le Bearer Token
+
+Teste
+{
+    "menu_id": 1
+}
+
+It's WORK well, nice

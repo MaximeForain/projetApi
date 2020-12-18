@@ -1,0 +1,37 @@
+URL = http://localhost:3001/user
+
+https://jwt.io/
+
+Go to : POST => Body => raw => JSON => remplire Body avec Test n° => Send
+
+Test 1 CUSTOMER
+{
+    "email": "user1@mail.com",
+    "password": "userPassword"
+}
+
+Test 2 CUSTOMER
+{
+    "email": "user2@mail.com",
+    "password": "user2Password"
+}
+
+Test 3 CUSTOMER
+{
+    "email": "user3@mail.com",
+    "password": "user3Password"
+}
+
+Test 4 ADMIN
+{
+    "email": "admin1@mail.com",
+    "password": "adminPassword"
+}
+
+Test 5 ADMIN
+{
+    "email": "admin2@mail.com",
+    "password": "adminPassword2"
+}
+
+

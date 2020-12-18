@@ -1,0 +1,64 @@
+GET :
+----------------------------------------------------------------------------
+URL = http://localhost:3001/promotion
+Go to : GET => Send
+
+USE TOKEN : metre le token pour etre en session dans le Bearer Token
+
+{
+    "product_id" : 1
+}
+
+Result => liste des promotion associer au produit
+
+
+CREATE :
+----------------------------------------------------------------------------
+URL = http://localhost:3001/promotion
+Go to : POST => Body => raw => JSON => remplire Body avec Test n° => Send
+
+Teste 1
+{
+    "promoprice": 2.50,
+    "ishappyhour": true,
+    "startdate": "2020-11-20T23:00:00.000Z",
+    "enddate": null,
+    "starttime": null,
+    "endtime": null,
+    "desciption": "Happy hour sur la Galipette Triple !",
+    "product_id": 2
+}
+
+
+UPDATE :
+----------------------------------------------------------------------------
+URL = http://localhost:3001/promotion
+Go to : PATCH => Body => raw => JSON => remplire Body avec Test n° => Send
+
+USE TOKEN : metre le token pour etre en session dans le Bearer Token
+
+Teste 1
+{
+    "promoprice": 4.50,
+    "ishappyhour": true,
+    "startdate": "2020-11-20T23:00:00.000Z",
+    "enddate": null,
+    "starttime": null,
+    "endtime": null,
+    "desciption": "Happy hour sur la Galipette Triple !",
+    "product_id": 2
+}
+
+DELET :
+----------------------------------------------------------------------------
+URL = http://localhost:3001/promotion
+Go to : DELETE => Body => raw => JSON => remplire Body avec Test n° => Send
+
+USE TOKEN : metre le token pour etre en session dans le Bearer Token
+
+Teste
+{
+    "product_id": 1
+}
+
+It's WORK well, nice

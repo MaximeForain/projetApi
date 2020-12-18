@@ -1,0 +1,63 @@
+GET :
+----------------------------------------------------------------------------
+URL = http://localhost:3001/bar
+Go to : GET => Send
+
+USE TOKEN : metre le token pour etre en session dans le Bearer Token
+
+Result => liste des bars associer a l'admin ou liste de bars tout cours si Curstomer
+
+
+CREATE :
+----------------------------------------------------------------------------
+URL = http://localhost:3001/bar
+Go to : POST => Body => raw => JSON => remplire Body avec Test n° => Send
+
+Teste 1
+{
+    "barname": "ART SALON NAMUR",
+    "description": "Chouette petit bar cosi avec beacoup d'anbience",
+    "phonenumber": "081226313",
+    "hashtags": "#Cool#Cosi#Procheducentre",
+    "webaddress": "https://www.facebook.com/artsalonnamur/",
+    "address": "Rue de la Croix 39, 5000 Namur"
+}
+
+
+UPDATE :
+----------------------------------------------------------------------------
+URL = http://localhost:3001/bar
+Go to : PATCH => Body => raw => JSON => remplire Body avec Test n° => Send
+
+USE TOKEN : metre le token pour etre en session dans le Bearer Token
+
+Teste 1
+{
+    "bar_id": 1,
+    "barname": "xxx",
+    "description": "Chouette petit bar cosi avec beacoup d'anbience",
+    "phonenumber": "081226313",
+    "hashtags": "#Cool#Cosi#Procheducentre",
+    "webaddress": "https://www.facebook.com/artsalonnamur/",
+    "address": "Rue de la Croix 39, 5000 Namur"
+}
+
+Teste 2
+{
+    "bar_id": 1,
+    "barname": "PPPP"
+}
+
+
+DELET :
+----------------------------------------------------------------------------
+URL = http://localhost:3001/bar/id
+Go to : DELETE => Body => raw => JSON => remplire Body avec Test n° => Send
+
+USE TOKEN : metre le token pour etre en session dans le Bearer Token
+
+ATTENTION ; voir avec quelle admin on est pour voir quelle bar on peut supp
+
+It's WORK well, nice
+
+
